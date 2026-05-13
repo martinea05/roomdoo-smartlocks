@@ -159,7 +159,7 @@ class SaltoProvider(BaseLockProvider):
 
     # ── _do_modify_code ──────────────────────────────────────────────────────
 
-    def _do_modify_code(self, access_group_id: str, time_schedule_id: str, start_date: datetime, end_date: datetime) -> CodeResult:
+    def _do_modify_code(self, access_group_id: str, time_schedule_id: str, start_date: datetime, end_date: datetime) -> dict:
         return self._modify_time_schedule_in_access_group(access_group_id, time_schedule_id, start_date, end_date)
 
     # ── get_access_groups_from_site ──────────────────────────────────────────────────────
